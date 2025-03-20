@@ -4,7 +4,7 @@ from django.urls import reverse
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Hello bhav, You are at blog's index page!")
+    return render(request,'index.html')
 
 def detail(request,post_id):
     return HttpResponse(f"You are viewing the post detail page and the Id is {post_id}")
